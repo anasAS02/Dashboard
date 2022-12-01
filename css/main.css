@@ -1641,6 +1641,64 @@ label {
     background-color: #0075ff; }
 
 /* End Projects */
+/* Start Courses */
+.courses {
+  padding-bottom: 30px; }
+  .courses .course {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .courses .course .box-style {
+      position: relative;
+      padding: 0px; }
+      .courses .course .box-style .head img {
+        width: 100%;
+        border-start-start-radius: 6px;
+        border-start-end-radius: 6px; }
+      .courses .course .box-style .head .avatar {
+        position: absolute;
+        left: 20px;
+        top: 25px; }
+        .courses .course .box-style .head .avatar img {
+          width: 65px;
+          border-radius: 50%;
+          border: 2px solid white; }
+      .courses .course .box-style .text {
+        padding: 10px; }
+        .courses .course .box-style .text h3 {
+          font-size: 18px;
+          margin-bottom: 0; }
+        .courses .course .box-style .text p {
+          font-size: 14px;
+          color: #888;
+          line-height: 1.7; }
+        .courses .course .box-style .text .btn {
+          position: absolute;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          left: 50%;
+          bottom: 15px;
+          cursor: auto;
+          font-size: 14px; }
+          .courses .course .box-style .text .btn:hover {
+            background-color: #0075ff; }
+      .courses .course .box-style .info {
+        padding: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        color: #888;
+        font-size: 14px;
+        border-top: 1px solid #eee; }
+
+/* End Courses */
 /* Start Global Rules */
 body {
   font-family: "Open Sans", sans-serif;
