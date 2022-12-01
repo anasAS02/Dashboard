@@ -1,0 +1,86 @@
+/* Start Friends */
+.friends{
+    padding-bottom: 30px;
+    .friend{
+        @include grid-300;
+        padding-left: 15px;
+        padding-right: 15px;
+        .box-style{
+            .head{
+                .icons{
+                    svg{
+                        background-color: $eee-color;
+                        padding: 8px;
+                        border-radius: 50%;
+                        color: $gray-color;
+                        cursor: pointer;
+                        transition: $main-transition;
+                        &:hover{
+                            background-color: $blue-color;
+                            color: $white-color;
+                        }
+                    }
+                }
+                .text{ 
+                    text-align: center;
+                    h3{
+                        margin-bottom: 5px;
+                        font-size: 18px;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: $gray-color;
+                        margin-top: 0;
+                    }
+                    img{
+                        width: 40%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .stats{
+                border-top: 1px solid $eee-color;
+                border-bottom: 1px solid $eee-color;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: flex;
+                justify-content: space-between;
+                .icons{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    font-size: 14px;
+                }
+                .vip{
+                    h2{
+                        font-size: 45px;
+                        color: $orange-color;
+                        opacity: 0.2;
+                        text-transform: uppercase;
+                        margin-bottom: -25px;
+                        margin-top: -5px;
+                    }
+                }
+            }
+            .info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p{
+                    font-size: 14px;
+                    color: $gray-color;
+                }
+                span{
+                    display: flex;
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                    .remove{
+                        background-color: $red-color;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Friends */
