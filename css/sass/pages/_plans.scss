@@ -1,0 +1,116 @@
+/* Start Plans */
+.plans{
+    .plan{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        gap: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+        .box-style{
+            .head{
+                text-align: center;
+                border: 5px solid $white-color;
+                color: $white-color;
+                h2{
+                    font-size: 40px;
+                    margin-bottom: -25px;
+                }
+                p{
+                    font-size: 35px;
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content: "$";
+                        font-size: 25px;
+                        left: 38%;
+                        bottom: 20px;
+                    }
+                }
+            }
+            .features{
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                span{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    p{
+                        color: $black-color;
+                        font-size: 16px;
+                        position: relative;
+                        padding-left: 10px;
+                        border-bottom: 1px solid $eee-color;
+                        padding-bottom: 10px;
+                    }
+                    svg{
+                        color: $gray-color;
+                        cursor: pointer;
+                    }
+                    .yes::before{
+                        position: absolute;
+                        content: "\f00c";
+                        font-weight: bold;
+                        font-family: 'Font Awesome 5 Free';
+                        color: $green-color;
+                        left: 0;
+                        top: 40%;
+                        transform: translate(-50%, -50%);
+                    }
+                    .no::before{
+                        position: absolute;
+                        content: "\f00d";
+                        font-weight: bold;
+                        font-family: 'Font Awesome 5 Free';
+                        color: $red-color;
+                        left: 0;
+                        top: 40%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+            .info{
+                padding-top: 10px;
+                .btn{
+                    padding: 10px;
+                }
+            }
+        }
+        .green{
+            .head{
+                background-color: $green-color;
+                outline: 3px solid $green-color;
+            }
+            .info{
+                .btn{
+                    background-color: $green-color;
+                }
+            }
+        }
+        .blue{
+            .head{
+                background-color: $blue-color;
+                outline: 3px solid $blue-color;
+            }
+            .info{
+                .btn{
+                    background-color: $blue-color;
+                }
+            }
+        }
+        .orange{
+            .head{
+                background-color: $orange-color;
+                outline: 3px solid $orange-color;
+            }
+            .info{
+                p{
+                    text-align: center;
+                    color: $gray-color;
+                }
+            }
+        }
+    }
+}
+/* End Plans */
