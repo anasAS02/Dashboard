@@ -2418,6 +2418,215 @@ label .toggle-ch:checked + .toggle-sw::before {
 }
 
 /* End Friends */
+/* Start Files */
+.files {
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 15px;
+  padding-top: 0;
+}
+
+@media (max-width: 767px) {
+  .files {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
+
+.files .file {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.files .file .box-style .p {
+  color: #888;
+  font-size: 14px;
+}
+
+.files .file .box-style .head {
+  text-align: center;
+}
+
+.files .file .box-style .head .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #888;
+}
+
+.files .file .box-style .head img {
+  width: 100px;
+  margin-bottom: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.files .file .box-style .head img:hover {
+  -webkit-transform: rotate(7deg);
+          transform: rotate(7deg);
+}
+
+.files .file .box-style .head p {
+  font-size: 15px;
+  margin-top: 0;
+}
+
+.files .file .box-style .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #888;
+  font-size: 13px;
+  border-top: 1px solid #eee;
+}
+
+.files .stats {
+  width: 25%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .files .stats {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.files .stats h2 {
+  margin-top: 0;
+}
+
+.files .stats .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.files .stats .box div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  color: #888;
+}
+
+.files .stats .box div p {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.files .stats .box svg {
+  padding: 10px;
+  font-size: 25px;
+  margin-right: 5px;
+  margin-left: 5px;
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.files .stats .box .i-zero {
+  color: #0075ff;
+  background-color: #0075ff33;
+}
+
+.files .stats .box .i-one {
+  color: #f44336;
+  background-color: #f4433633;
+}
+
+.files .stats .box .i-two {
+  color: #22c55e;
+  background-color: #22c55e33;
+}
+
+.files .stats .box .i-three {
+  color: #f59b0e;
+  background-color: #f59e0b33;
+}
+
+.files .stats .box span {
+  font-size: 12px;
+  color: #888;
+}
+
+.files .stats .btn {
+  margin: 10px auto;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.files .stats .btn:hover svg {
+  -webkit-animation: moving 1s infinite;
+          animation: moving 1s infinite;
+}
+
+@-webkit-keyframes moving {
+  0%, 100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes moving {
+  0%, 100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  50% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+/* End Files */
 /* Start Global Rules */
 body {
   font-family: "Open Sans", sans-serif;
