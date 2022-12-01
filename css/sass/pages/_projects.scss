@@ -1,0 +1,127 @@
+/* Start Projects */
+.first-box{
+.projects{
+        @include grid-500;
+        padding-top: 0;
+        padding-left: 0;
+.box-style{
+        .head{
+            display: flex;
+            justify-content: space-between;
+            .text{
+                h2{
+                    font-size: 18px;
+                    font-weight: normal;
+                }
+                p{
+                    font-size: 15px;
+                    color: $gray-color;
+                }
+            }
+            .date{
+                p{
+                    font-size: 14px;
+                    color: $gray-color;
+                }
+            }
+        }
+        .images{
+            padding-top: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $eee-color;
+            img{
+                width: 40px;
+                border-radius: 50%;
+                border: 2px solid $white-color;
+                margin-right: -20px;
+                cursor: pointer;
+                position: relative;
+                transition: $main-transition;
+                &:hover{
+                    z-index: 1;
+                }
+            }
+        }
+        .skills{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-left: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            @include max-mob{
+                flex-direction: column;
+                width: fit-content;
+                margin-left: 0;
+                text-align: center;
+            }
+            span{
+                background-color: $eee-color;
+                padding: 5px;
+                border-radius: 5px;
+                font-size: 13px;
+            }
+        }
+        .last-sec{
+            border-top: 1px solid $eee-color;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include max-mob{
+                flex-direction: column;
+                gap: 20px;
+            }
+        .progress{
+            position: relative;
+            background-color: $eee-color;
+            border-radius: 10px;
+            height: 6px;
+            width: 30%;
+            @include max-mob{
+                width: 50%;
+            }
+            span{
+                position: absolute;
+                height: 6px;
+            }
+        }
+            .text{
+                p{
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $gray-color;
+                }
+            }
+    }
+}
+.pb-2,
+.pb-4,
+.pb-5,
+.pb-7,
+.pb-8,
+.pb-9{
+    .progress{
+        span{
+            background-color: $green-color;
+        }
+    }
+}
+.pb-1,
+.pb-6{
+    .progress{
+        span{
+            background-color: $red-color;
+        }
+    }
+}
+.pb-3{
+    .progress{
+        span{
+            background-color: $blue-color;
+        }
+    }
+}
+}
+}
+/* End Projects */

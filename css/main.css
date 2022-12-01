@@ -1525,6 +1525,122 @@ label {
             text-align: center;
             margin-top: 0; } }
 
+/* Start Projects */
+.first-box .projects {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 40px;
+  padding-top: 0;
+  padding-left: 0; }
+  .first-box .projects .box-style .head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .first-box .projects .box-style .head .text h2 {
+      font-size: 18px;
+      font-weight: normal; }
+    .first-box .projects .box-style .head .text p {
+      font-size: 15px;
+      color: #888; }
+    .first-box .projects .box-style .head .date p {
+      font-size: 14px;
+      color: #888; }
+  .first-box .projects .box-style .images {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee; }
+    .first-box .projects .box-style .images img {
+      width: 40px;
+      border-radius: 50%;
+      border: 2px solid white;
+      margin-right: -20px;
+      cursor: pointer;
+      position: relative;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+      .first-box .projects .box-style .images img:hover {
+        z-index: 1; }
+  .first-box .projects .box-style .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 5px;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    @media (max-width: 767px) {
+      .first-box .projects .box-style .skills {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin-left: 0;
+        text-align: center; } }
+    .first-box .projects .box-style .skills span {
+      background-color: #eee;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 13px; }
+  .first-box .projects .box-style .last-sec {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (max-width: 767px) {
+      .first-box .projects .box-style .last-sec {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 20px; } }
+    .first-box .projects .box-style .last-sec .progress {
+      position: relative;
+      background-color: #eee;
+      border-radius: 10px;
+      height: 6px;
+      width: 30%; }
+      @media (max-width: 767px) {
+        .first-box .projects .box-style .last-sec .progress {
+          width: 50%; } }
+      .first-box .projects .box-style .last-sec .progress span {
+        position: absolute;
+        height: 6px; }
+    .first-box .projects .box-style .last-sec .text p {
+      font-size: 14px;
+      font-weight: bold;
+      color: #888; }
+  .first-box .projects .pb-2 .progress span,
+  .first-box .projects .pb-4 .progress span,
+  .first-box .projects .pb-5 .progress span,
+  .first-box .projects .pb-7 .progress span,
+  .first-box .projects .pb-8 .progress span,
+  .first-box .projects .pb-9 .progress span {
+    background-color: #22c55e; }
+  .first-box .projects .pb-1 .progress span,
+  .first-box .projects .pb-6 .progress span {
+    background-color: #f44336; }
+  .first-box .projects .pb-3 .progress span {
+    background-color: #0075ff; }
+
+/* End Projects */
 /* Start Global Rules */
 body {
   font-family: "Open Sans", sans-serif;
