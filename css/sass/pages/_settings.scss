@@ -1,0 +1,292 @@
+.settings{
+    @include grid-500{
+        gap: 20px
+    };
+    padding: 0 10px;
+    /* Start Site Control */
+    .site-control{
+        .box-style{
+            .control{
+                h5{
+                    margin-bottom: 0;
+                    font-weight: normal;
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 14px;
+                    color: $gray-color;
+                    margin-top: 5px;
+                }
+                position: relative;
+            }
+            .form{
+                textarea{
+                    resize: none;
+                    height: 140px;
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid $eee-color;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    /* End Site Control */
+
+    /* Start General Info */
+    .general-info{
+        .box-style{
+            .form{
+                display: flex;
+                flex-direction: column;
+                span{
+                    font-size: 13px;
+                    color: $gray-color;
+                input{
+                    width: 100%;
+                    margin-bottom: 15px;
+                    margin-top: 5px;
+                    padding: 10px;
+                    border: 1px solid $eee-color;
+                    border-radius: 6px;
+                }
+            }
+            .span-email{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 17px;
+                .email{
+                    cursor: not-allowed;
+                    width: 85%;
+                }
+                a{
+                    margin-left: auto;
+                    margin-top: -45px;
+                    font-size: 14px;
+                    color: $blue-color;
+                }
+            }
+            }
+        }
+    }
+    /* End General Info */
+    
+    /* Start Security Info */
+    .security-info{
+        .box-style{
+            .settings{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                a{
+                    margin: 15px 0;
+                }
+                .s-btn{
+                    background-color: $eee-color;
+                    color: $black-color;
+                }
+                span{
+                    font-size: 13px;
+                    p{
+                        color: $gray-color;
+                        margin-top: 5px;
+                    }
+                }
+                &:not(:last-child){
+                    border-bottom: 1px solid $eee-color;
+                    margin-bottom: 15px;
+                }
+            }
+            .ch{
+                position: relative;
+            }
+        }
+    }
+    /* End Security Info */
+    
+    /* Start Social Info */
+    .social-info{
+        .box-style{
+            .box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+                svg{
+                    border: 1px solid $eee-color;
+                    padding: 4px;
+                    height: 25px;
+                    border-radius: 6px;
+                    color: $gray-color;
+                    background-color: #f6f6f6;
+                }
+                input{
+                    border: 1px solid $eee-color;
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 6px;
+                    background-color: #f6f6f6;
+                }
+            }
+        }
+    }
+    /* End Social Info */
+    
+    /* Start Widgets Control*/
+    .widgets-control{
+        .box-style{
+            .list{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    /* End Widgets Control*/
+
+    /* Start Widgets Control */
+    .widgets-control{
+        .box-style{
+            .list{
+                padding-left: 20px;
+                label{
+                    position: relative;
+                    cursor: pointer;
+                    font-size: 18px;
+                    &:hover{
+                        &::before{
+                            border-color: $blue-color;
+                        }
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 14px;
+                        height: 14px;
+                        border: 1px solid rgb(192, 189, 189);
+                        border-radius: 1px;
+                        left: -20px;
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                        transition: $main-transition;
+                    }
+                    &::after{
+                        content: "\f00c";
+                        position: absolute;
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: 900;
+                        font-size: 12px;
+                        width: 14px;
+                        height: 14px;
+                        left: -27px;
+                        transform: translate(-50%, -50%);
+                        top: 5px;
+                        color: $white-color;
+                        background-color: $blue-color;
+                        transform: scale(0) rotate(360deg);
+                        transition: $main-transition;
+                    }
+                }
+                input[type="checkbox"]:checked{
+                    + label::after{
+                        transform: scale(1);
+                    }
+                }
+                input[type="checkbox"]{
+                    -webkit-appearance: none;
+                    appearance: none;
+                }
+            }
+        }
+    }
+    /* End Widgets Control */
+
+    /* Start Backup Manager */
+    .backup{
+        .box-style{
+            .b-list{
+                    padding-left: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        position: relative;
+                        cursor: pointer;
+                        font-size: 18px;
+                        &:hover{
+                            &::before{
+                                border-color: $blue-color;
+                            }
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 16px;
+                            height: 16px;
+                            border: 1px solid rgb(192, 189, 189);
+                            border-radius: 50%;
+                            left: -20px;
+                            transform: translate(-50%, -50%);
+                            top: 50%;
+                            transition: $main-transition;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            font-size: 12px;
+                            width: 11px;
+                            height: 11px;
+                            left: -25px;
+                            transform: translate(-50%, -50%);
+                            top: 5px;
+                            color: $white-color;
+                            border-radius: 50%;
+                            background-color: $blue-color;
+                            transform: scale(0) rotate(360deg);
+                            transition: $main-transition;
+                        }
+                    }
+                    input[type="checkbox"]:checked{
+                        + label::after{
+                            transform: scale(1);
+                        }
+                    }
+                    input[type="checkbox"]{
+                        -webkit-appearance: none;
+                        appearance: none;
+                    }
+                }
+                .servers{
+                    display: flex;
+                    justify-content: space-around;
+                    padding-top: 25px;
+                    .server{
+                        display: block;
+                        width: 35%;
+                        height: 90px;
+                        text-align: center;
+                        padding-top: 25px;
+                        border: 2px solid $eee-color;
+                        border-radius: 6px;
+                    }
+                    label{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        position: relative;
+                        cursor: pointer;
+                        padding-top: 10px;
+                    }
+                    input[type="radio"]{
+                        -webkit-appearance: none;
+                        appearance: none;
+                    }
+                    input[type="radio"]:checked{
+                        + .server{
+                            border-color: $blue-color;
+                        }
+                    }
+                }
+            }
+    }
+    /* End Backup Manager */
+
+}

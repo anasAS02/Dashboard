@@ -1,0 +1,41 @@
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixin';
+@import 'sass/components/components';
+
+@import 'sass/layout/header';
+@import 'sass/pages/homepage';
+@import 'sass/pages/settings';
+@import 'sass/pages/profile';
+@import 'sass/layout/footer';
+
+/* Start Global Rules */
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $blue-color;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    :focus{
+        outline: none;
+    }
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+/* End Global Rules */
+
+

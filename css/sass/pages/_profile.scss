@@ -1,0 +1,241 @@
+.first-box{
+    padding-right: 20px;
+    padding-left: 20px;
+    /* Start Profile */
+    .profile{
+        .box-style{
+            display: flex;
+            justify-content: center;
+            @include max-mob{
+                flex-direction: column;
+                gap: 40px;
+            }
+            .info{
+                width: 30%;
+                @include max-mob{
+                    width: 100%;
+                }
+                img{
+                    max-width: 50%;
+                    margin-bottom: -35px;
+                    @include max-mob{
+                        max-width: 28%;
+                    }
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                border-right: 1px solid $eee-color;
+                .text{
+                    padding-top: 30px;
+                    h2{
+                        font-size: 20px;
+                        margin-bottom: -5px;
+                    }
+                    p{
+                        color: $gray-color;
+                    }
+                }
+                .progress{
+                    position: relative;
+                    background-color: $eee-color;
+                    width: 70%;
+                    height: 6px;
+                    border-radius: 6px;
+                    margin-bottom: 5px;
+                    @include max-mob{
+                        width: 40%;
+                    }
+                    span{
+                        position: absolute;
+                        background-color: $blue-color;
+                        height: 6px;
+                        left: 0;
+                    }
+                }
+                .rate{
+                    svg{
+                        color: $orange-color;
+                        font-size: 13px;
+                    }
+                    p{
+                        color: $gray-color;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                .box{
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 15px;
+                    padding-left: 10px;
+                    transition: $main-transition;
+                    @include max-mob{
+                        justify-content: center;
+                        font-size: 14px;
+                        padding-left: 0;
+                    }
+                    &:not(:last-child){
+                        border-bottom: 1px solid $eee-color;
+                    }
+                    &:hover{
+                        background-color: $eee-color;
+                    }
+                    .text{
+                        h5{
+                            font-weight: normal;
+                            font-size: 16px;
+                            color: $gray-color;
+                            margin-bottom: -5px;
+                        }
+                        p{
+                            color: $gray-color;
+                        }
+                    span{
+                        display: flex;
+                        align-items: center;
+                        font-size: 14px;
+                        color: $gray-color;
+                        margin-bottom: -15px;
+                        p{
+                            color: $black-color;
+                            padding-left: 5px;
+                        }
+                    }
+                }
+                .switch{
+                    padding-left: 40px;
+                    span{
+                        display: flex;
+                        align-items: center;
+                        color: $gray-color;
+                        p{
+                            color: $black-color;
+                            padding-left: 5px;
+                        }
+                    }
+                    position: relative;
+                    label{
+                        left: 40px;
+                        top: 25px;
+                        .toggle-sw{
+                            width: 100px;
+                            height: 20px;
+                            &::before{
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                        .toggle-ch:checked{
+                            + .toggle-sw{
+                                background-color: $blue-color;
+                                &::before{
+                                    content: "\f00c";
+                                    left: 87px;
+                                }
+                            }
+                        }
+                    }
+                }
+                }
+            }
+        }
+    }
+    /* End Profile */
+    
+    /* Start My Skills */
+    .last-section{
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        @include max-mob{
+            flex-direction: column;
+        }
+    }
+    .skills{
+        width: 30%;
+        @include max-mob{
+            width: 100%;
+        }
+        .box-style{
+            .skill{
+                padding-bottom: 20px;
+                margin-top: 20px;
+                @include max-mob{
+                    text-align: center;
+                }
+                span{
+                    background-color: $eee-color;
+                    padding: 5px;
+                    border-radius: 6px;
+                    font-size: 14px;
+                }
+                &:not(:last-child){
+                    border-bottom: 1px solid $eee-color;
+                }
+            }
+        }
+    }
+    /* End My Skills */
+
+    /* Start Latest Activities */
+    .latest-activities{
+        width: 70%;
+        padding-left: 20px;
+        @include max-mob{
+            width: 100%;
+            padding-left: 0px;
+            padding-top: 50px;
+        }
+        .box-style{
+            .box{
+                display: flex;
+                justify-content: space-between;
+                @include max-mob{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .left{
+                    display: flex;
+                    align-items: center;
+                    @include max-mob{
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+                    img{
+                        width: 64px;
+                    }
+                    p{
+                        padding: 10px;
+                        font-size: 16px;
+                        &:first-of-type{
+                            margin-bottom: -25px;
+                        }
+                    }
+                }
+                .right{
+                    p{
+                        text-align: right;
+                        &:last-of-type{
+                            color: $gray-color;
+                        }
+                        @include max-mob{
+                            text-align: center;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* End Latest Activities */
+}
