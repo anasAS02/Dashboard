@@ -126,10 +126,10 @@
 /* Start Welcome Widget */
 .page{
     .page-one{
-        @include grid-450;
+        @include grid-400;
         padding-top: 5px;
         padding-left: 10px;
-        padding-right: 15px;
+        padding-right: 10px;
         .box{
             position: relative;
             padding-bottom: 60px;
@@ -292,6 +292,8 @@
             }
             .text{
                 padding-left: 10px;
+                display: flex;
+                justify-content: center;
                 div{
                     font-size: 14px;
                     color: $gray-color;
@@ -303,105 +305,82 @@
                         margin-top: 5px;
                     }
                 }
-            }
-            .progress-one{
-                position: relative;
-                width: 75%;
-                height: 3px;
-                background-color: #0075ff33;
-                margin: 58px auto;
-                left: 21%;
-                transform: translate(-50%, -50%);
-                border-radius: 6px;
-                span{
-                    position: absolute;
-                    background-color: $blue-color;
-                    height: 3px;
+                .progress{
+                    width: 340px;
+                    background-color: $eee-color;
+                    height: 4px;
+                    border-radius: 6px;
+                    position: relative;
+                    margin: 60px 0px -55px -40px;
+                    &::before{
+                        position: absolute;
+                        width: 22px;
+                        height: 22px;
+                        border-radius: 6px;
+                        top: -38px;
+                        color: $white-color;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 11px;
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        border-width: 9px;
+                        border-color: transparent transparent transparent transparent;
+                        border-style: solid;
+                        top: -19px;
+                    }
+                    span{
+                        position: absolute;
+                        height: 4px;
+                        top: 0;
+                        border-radius: 6px;
+                    }
                 }
-                &::after{
-                    content: "80%";
-                    background-color: $blue-color;
-                    left: 232px;
+                .progress-one{
+                    span{
+                        background-color: $blue-color;
+                    }
+                    &::before{
+                        content: "80%";
+                        left: 75%;
+                        background-color: $blue-color;
+                    }
+                    &::after{
+                        border-color: $blue-color transparent transparent transparent;
+                        left: 75.5%;
+                    }
                 }
-                &::before{
-                    position: absolute;
-                    content: "";
-                    border-width: 6px;
-                    border-color: $blue-color transparent transparent transparent;
-                    left: 240px;
-                    border-style: solid;
-                    top: -11px;
+                .progress-two{
+                    span{
+                        background-color: $orange-color;
+                    }
+                    &::before{
+                        content: "55%";
+                        left: 50%;
+                        background-color: $orange-color;
+                    }
+                    &::after{
+                        border-color: $orange-color transparent transparent transparent;
+                        left: 50.5%;
+                    }
                 }
-            }
-            .progress-two{
-                position: relative;
-                width: 75%;
-                height: 3px;
-                background-color: #f59e0b33;
-                margin: 58px auto;
-                left: 23%;
-                transform: translate(-50%, -50%);
-                border-radius: 6px;
-                span{
-                    position: absolute;
-                    background-color: $orange-color;
-                    height: 3px;
+                .progress-three{
+                    span{
+                        background-color: $green-color;
+                    }
+                    &::before{
+                        content: "75%";
+                        left: 70%;
+                        background-color: $green-color;
+                    }
+                    &::after{
+                        border-color: $green-color transparent transparent transparent;
+                        left: 70.5%;
+                    }
                 }
-                &::after{
-                    content: "55%";
-                    background-color: $orange-color;
-                    left: 155px;
-                }
-                &::before{
-                    position: absolute;
-                    content: "";
-                    border-width: 6px;
-                    border-color: $orange-color transparent transparent transparent;
-                    left: 162px;
-                    border-style: solid;
-                    top: -11px;
-                }
-            }
-            .progress-three{
-                position: relative;
-                width: 75%;
-                height: 3px;
-                background-color: #22c55e33;
-                margin: 58px auto;
-                left: 28%;
-                transform: translate(-50%, -50%);
-                border-radius: 6px;
-                span{
-                    position: absolute;
-                    background-color: $green-color;
-                    height: 3px;
-                }
-                &::after{
-                    content: "75%";
-                    background-color: $green-color;
-                    left: 227px;
-                }
-                &::before{
-                    position: absolute;
-                    content: "";
-                    border-width: 6px;
-                    border-color: $green-color transparent transparent transparent;
-                    left: 234px;
-                    border-style: solid;
-                    top: -11px;
-                }
-            }
-            .progress-one::after,
-            .progress-two::after,
-            .progress-three::after{
-                position: absolute;
-                height: 22px;
-                width: 27px;
-                border-radius: 6px;
-                top: -32px;
-                text-align: center;
-                color: $white-color;
-                font-size: 14px;
             }
         }
     }
