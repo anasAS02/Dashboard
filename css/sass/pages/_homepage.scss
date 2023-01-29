@@ -1,5 +1,31 @@
 /* Start Sidebar */
 .page{
+    .home-box{
+        @include max-mob{
+            h2{
+                font-size: 12px;
+            }
+            p{
+                font-size: 10px !important;
+            }
+            .t-box{
+                h3{
+                    font-size: 10px;
+                }
+                p{
+                    font-size: 8px !important;
+                }
+            }
+            .r-box{
+                h3{
+                    font-size: 10px !important;
+                }
+                p{
+                    font-size: 8px !important;
+                }
+            }
+        }
+    }
     .sidebar{
         height: 100vh;
         border-right: 2px solid #eee;
