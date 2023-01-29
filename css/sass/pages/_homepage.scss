@@ -25,6 +25,11 @@
                 }
             }
         }
+        .p-mob{
+            @include max-mob{
+                font-size: 8px !important;
+            }
+        }
     }
     .sidebar{
         height: 100vh;

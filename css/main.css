@@ -170,6 +170,10 @@ label {
   .page .home-box .r-box p {
     font-size: 8px !important; } }
 
+@media (max-width: 990px) {
+  .page .home-box .p-mob {
+    font-size: 8px !important; } }
+
 .page .sidebar {
   height: 100vh;
   border-right: 2px solid #eee;
