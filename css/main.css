@@ -163,12 +163,12 @@ label {
     font-size: 10px !important; }
   .page .home-box .t-box h3 {
     font-size: 10px; }
-  .page .home-box .t-box p {
-    font-size: 8px !important; }
-  .page .home-box .r-box h3 {
-    font-size: 10px !important; }
-  .page .home-box .r-box p {
-    font-size: 8px !important; } }
+  .reminders .r-box p {
+    font-size: 6px !important; } 
+  .reminders h3 {
+    font-size: 7px !important;
+    margin-bottom: 12px; } 
+  }
 
 @media (max-width: 990px) {
   .page .home-box .p-mob {
