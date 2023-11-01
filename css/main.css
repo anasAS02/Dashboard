@@ -950,7 +950,6 @@ label {
   .page .projects .box-style {
     overflow-x: auto; }
     .page .projects .box-style table {
-      min-width: 1000px;
       width: 100%;
       border-spacing: 0;
       font-size: 15px; }
